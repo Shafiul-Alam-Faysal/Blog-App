@@ -1,9 +1,16 @@
+import BlogItem from "@/Components/BlogItem";
+import BlogList from "@/Components/BlogList";
+import Footer from "@/Components/Footer";
+import Header from "@/Components/Header";
+import { ToastContainer } from "react-toastify";
+
 export default function Home() {
 	return (
 		<>
-			<div>
-				<h1>hello</h1>
-			</div>
+			<ToastContainer theme="dark" />
+			<Header />
+			<BlogList />
+			<Footer />
 		</>
 	);
 }
